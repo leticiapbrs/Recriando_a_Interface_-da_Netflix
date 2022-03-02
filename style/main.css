@@ -1,0 +1,228 @@
+/* elementos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* header */
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    padding-bottom: 10px;
+}
+
+header .container-black {
+    background-image: linear-gradient(180deg, black, black);
+}
+
+header nav a {
+    text-decoration: none;
+    color: #E0E0E0;
+    margin-right: 10px;
+    padding-left: 9px;
+    font-size: 17px;
+}
+
+header nav a:hover {
+    color: #B3B3B3;
+}
+
+header .principal {
+    display: flex;
+    justify-items: center;
+}
+
+header .secundario {
+    position: absolute;
+    right: 120px;
+}
+
+.netflix-logo {
+    margin-right: 35px;
+}
+
+/* filme-principal */
+.cuphead-logo {
+    width: 400px;
+}
+
+.filme-principal {
+    font-size: 25px;
+    height: 850px;
+}
+
+.container {
+    background-image: url('cuphead.jpg');
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-left: 50px;
+    width: 100%;
+    height: 100;
+}
+
+.container .cuphead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cuphead {
+    padding-top: 150px;
+}
+
+.descricao {
+    color: #FFF;
+    text-shadow: #0000;
+    width: 650px;
+    padding-top: 1rem;
+}
+
+/* botões */
+.botoes {
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.botao-1,
+.botao-2 {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 22px;
+    border: white;
+}
+
+.botao-1 {
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.botao-1:hover {
+    opacity: 85%;
+}
+
+.botao-2 {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background-color: rgba(109, 109, 110, 0.6);
+    color: white;
+}
+
+.botao-2:hover {
+    background-color: rgba(109, 109, 110, 0.4);
+}
+
+.botao-1 i,
+.botao-2 i {
+    margin-right: 12px;
+}
+
+/* minha lista */
+.minha-lista {
+    position: absolute;
+    bottom: 190px;
+}
+
+.continuar-assistindo,
+.minha-lista {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 55px;
+}
+
+.continuar-assistindo {
+    position: relative;
+    bottom: 100px;
+}
+
+.filmes1 {
+    position: relative;
+    bottom: 80px;
+}
+
+.filmes2 {
+    position: relative;
+    bottom: 80px;
+    padding-left: 50px;
+}
+
+.box-filmes {
+    height: 100%;
+    width: 100%;
+}
+
+.item :hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* media queries */
+@media only screen and (max-width: 480px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .descricao {
+        max-width: 75%;
+    }
+
+    .botoes {
+        max-width: 70%;
+    }
+
+    .botao-1 {
+        margin-top: 2.5rem;
+    }
+
+    .cuphead-logo {
+        max-width: 80%;
+    }
+
+    .cuphead {
+        padding-top: 80px;
+    }
+
+}
+
+@media only screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botoes {
+        margin-top: 15px;
+        display: block;
+    }
+
+    .botao-1 {
+        margin-bottom: 1rem;
+    }
+
+    .descricao {
+        padding-top: 1.5rem;
+        max-width: 85%;
+    }
+
+    .minha-lista {
+        bottom: 150px;
+    }
+
+    .continuar-assistindo {
+       bottom: 90px;
+    }
+}
