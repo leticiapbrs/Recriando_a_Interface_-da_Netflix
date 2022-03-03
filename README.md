@@ -7,7 +7,7 @@ Dentre as adições realizadas por mim para melhoria estética do projeto aprese
 * Header fixo e transparente, torna-se preto com scrol da página;
 * Adição de favicon; 
 * Adição dos ícones procurar, notificações e user na lateral direita da header;
-* Utilização de imagens-logo ao invés de texto (cuphead e Netflix);
+* Utilização de imagens-logo ao invés de texto ("The Cuphead Show!" e Netflix);
 * Alteração no estilo dos botões tornando-os mais próximos do site original;
 * Imagens no carousel aumentam de tamanho ao passar do cursor.
 
